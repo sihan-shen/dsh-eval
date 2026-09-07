@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "incremental": false,
+    "noEmit": true
+  },
+  "include": [
+    "src/governance/**/*.ts",
+    "tests/governance/**/*.ts"
+  ],
+  "references": []
+}

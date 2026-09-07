@@ -1,0 +1,50 @@
+{
+  "name": "@ds-plugins/dsh-eval",
+  "version": "0.2.0",
+  "description": "Offline evaluation, governance evidence, and bounded telemetry analysis for DeepSeek Harness",
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": "^22.19.0 || >=24"
+  },
+  "type": "module",
+  "main": "./lib/src/index.js",
+  "types": "./lib/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/src/index.d.ts",
+      "default": "./lib/src/index.js"
+    },
+    "./governance": {
+      "types": "./lib/src/governance/index.d.ts",
+      "default": "./lib/src/governance/index.js"
+    }
+  },
+  "files": [
+    "lib/src/**/*.js",
+    "lib/src/**/*.d.ts",
+    "lib/src/**/*.d.ts.map",
+    "fixtures/v0.2a/**",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.governance-tests.json",
+    "test": "pnpm run build && pnpm run typecheck && vitest run --config vitest.config.ts",
+    "test:package-entry": "pnpm run build && pnpm exec vitest run --config vitest.package-entry.config.ts",
+    "prepack": "pnpm run build"
+  },
+  "dependencies": {
+    "@ds-plugins/dsh-code-intelligence": "^0.2.0",
+    "@ds-plugins/dsh-context": "^0.2.0",
+    "@ds-plugins/dsh-telemetry": "^0.5.0",
+    "@dqbd/tiktoken": "1.0.22"
+  },
+  "devDependencies": {
+    "@types/node": "26.3.0",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
+  },
+  "bin": {
+    "dsh-telemetry": "./lib/src/telemetry/cli.js"
+  }
+}
