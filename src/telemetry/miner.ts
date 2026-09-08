@@ -4,7 +4,7 @@ import {
   type EvidenceRefV1,
   type PatternV1,
   type RunAnnotationV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { createHash } from 'node:crypto'
 import { getValidatedCompleteRunsV1, type ValidatedCompleteRunV1 } from './dataset.js'
 

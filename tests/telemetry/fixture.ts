@@ -4,7 +4,7 @@ import type {
   RunAnnotationV1,
   RunSealV1,
   TelemetryRecordV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 
 export const ref = (digit: string): string => digit.repeat(64)
 

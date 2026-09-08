@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest'
-import { parseEvaluationRecordV1, type EvaluationTaskV1 } from '@ds-plugins/dsh-context'
+import { parseEvaluationRecordV1, type EvaluationTaskV1 } from '@han_05/dsh-context'
 import manifest from '../fixtures/v0.2a/manifest.json'
 import {
   createOptimizedCacheProtocol,

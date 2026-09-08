@@ -1,4 +1,4 @@
-import { canonicalJson, FAILURE_CLASSES, type FailureClassV1, type PatternV1 } from '@ds-plugins/dsh-telemetry/contracts'
+import { canonicalJson, FAILURE_CLASSES, type FailureClassV1, type PatternV1 } from '@han_05/dsh-telemetry/contracts'
 import { createHash } from 'node:crypto'
 import { chmod, lstat, mkdir, mkdtemp, readFile, symlink, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'

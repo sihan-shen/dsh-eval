@@ -6,7 +6,7 @@ import {
   type ObservationV1,
   type RunAnnotationV1,
   type RunSealV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { Buffer } from 'node:buffer'
 
 const MAX_TELEMETRY_BYTES = 8 * 1024 * 1024

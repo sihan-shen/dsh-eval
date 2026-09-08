@@ -10,7 +10,7 @@ import {
   type EvaluationRecordV1,
   type EvaluationTaskV1,
   type SymbolMatchV1,
-} from '@ds-plugins/dsh-context'
+} from '@han_05/dsh-context'
 import {
   buildSymbolIndex,
   apply as applyCodeIntelligence,
@@ -18,7 +18,7 @@ import {
   extractFallbackSymbols,
   querySymbols,
   RepositorySnapshotStore,
-} from '@ds-plugins/dsh-code-intelligence'
+} from '@han_05/dsh-code-intelligence'
 import { computeRetrievalMetrics } from './metrics.js'
 import { runFixtureVerifier } from './fixture-verifier.js'
 import { estimateSourceTokensV1 } from './tokenizer.js'

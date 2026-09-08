@@ -2,8 +2,8 @@ import { lstat, readFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { pathToFileURL } from 'node:url'
-import { assertSafeRepoPath, isIndexableFile, parseEvaluationTaskV1, sha256Utf8 } from '@ds-plugins/dsh-context'
-import type { EvaluationTaskV1, SymbolMatchV1 } from '@ds-plugins/dsh-context'
+import { assertSafeRepoPath, isIndexableFile, parseEvaluationTaskV1, sha256Utf8 } from '@han_05/dsh-context'
+import type { EvaluationTaskV1, SymbolMatchV1 } from '@han_05/dsh-context'
 import type { BaselineFileV1, BaselineRunOptionsV1, BaselineRunV1 } from './types.js'
 
 const fixtureRoot = fileURLToPath(new URL(import.meta.url.includes('/lib/') ? '../../fixtures/v0.2a/repos/' : '../fixtures/v0.2a/repos/', import.meta.url))

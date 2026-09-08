@@ -5,7 +5,7 @@ import {
   type FailureClassV1,
   type LessonV1,
   type PatternV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { canonicalGovernanceJson, sha256Canonical } from './canonical.js'
 import type {
   CandidateSupportRunV1,

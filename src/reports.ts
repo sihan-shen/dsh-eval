@@ -1,5 +1,5 @@
-import type { EvaluationRecordV1, PromotionAggregateV1, PromotionReportV1 } from '@ds-plugins/dsh-context'
-import { parseEvaluationRecordV1 } from '@ds-plugins/dsh-context'
+import type { EvaluationRecordV1, PromotionAggregateV1, PromotionReportV1 } from '@han_05/dsh-context'
+import { parseEvaluationRecordV1 } from '@han_05/dsh-context'
 import { median } from './metrics.js'
 
 const thresholds = {

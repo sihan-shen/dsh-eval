@@ -1,4 +1,4 @@
-import { FAILURE_CLASSES, type DatasetV1, type FailureClassV1, type RunAnnotationV1 } from '@ds-plugins/dsh-telemetry/contracts'
+import { FAILURE_CLASSES, type DatasetV1, type FailureClassV1, type RunAnnotationV1 } from '@han_05/dsh-telemetry/contracts'
 import { describe, expect, it } from 'vitest'
 import { mineFailures } from '../../src/telemetry/miner.js'
 import { annotation, observation, ref, seal } from './fixture.js'

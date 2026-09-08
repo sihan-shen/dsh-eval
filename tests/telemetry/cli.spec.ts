@@ -5,7 +5,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { ref, observation, seal, annotation } from './fixture.js'
-import { openTelemetryStore } from '@ds-plugins/dsh-telemetry/storage'
+import { openTelemetryStore } from '@han_05/dsh-telemetry/storage'
 import { runCli } from '../../src/telemetry/cli.js'
 
 const cli = fileURLToPath(new URL('../../lib/src/telemetry/cli.js', import.meta.url))

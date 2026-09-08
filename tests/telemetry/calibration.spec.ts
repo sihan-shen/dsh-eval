@@ -1,4 +1,4 @@
-import type { DatasetV1, RunAnnotationV1 } from '@ds-plugins/dsh-telemetry/contracts'
+import type { DatasetV1, RunAnnotationV1 } from '@han_05/dsh-telemetry/contracts'
 import { describe, expect, it } from 'vitest'
 import { calibrateModels } from '../../src/telemetry/calibration.js'
 import { annotation, observation, ref, seal } from './fixture.js'

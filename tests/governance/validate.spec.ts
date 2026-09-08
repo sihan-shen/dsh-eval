@@ -5,7 +5,7 @@ import type {
   PatternV1,
   RunAnnotationV1,
   RunSealV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { describe, expect, it } from 'vitest'
 import {
   sha256Canonical,

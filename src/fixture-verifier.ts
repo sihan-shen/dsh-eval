@@ -1,8 +1,8 @@
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { join } from 'node:path'
-import { parseEvaluationTaskV1 } from '@ds-plugins/dsh-context'
-import type { EvaluationTaskV1 } from '@ds-plugins/dsh-context'
+import { parseEvaluationTaskV1 } from '@han_05/dsh-context'
+import type { EvaluationTaskV1 } from '@han_05/dsh-context'
 import type { BaselineRunV1, RetrievalRunV1 } from './types.js'
 import { readCheckedFixtureFile } from './baseline.js'
 

@@ -4,8 +4,8 @@ import type {
   EvaluationTaskV1,
   PromotionReportV1,
   SymbolMatchV1,
-} from '@ds-plugins/dsh-context'
-import { sha256Utf8 } from '@ds-plugins/dsh-context'
+} from '@han_05/dsh-context'
+import { sha256Utf8 } from '@han_05/dsh-context'
 import manifest from '../fixtures/v0.2a/manifest.json'
 import { computeRetrievalMetrics } from '../src/metrics.js'
 import { evaluatePromotion } from '../src/reports.js'
@@ -265,7 +265,7 @@ describe('v0.2b promotion report aggregation boundary', () => {
   })
 
   it('round-trips evaluator output through the shared promotion parser', async () => {
-    const { parsePromotionReportV1 } = await import('@ds-plugins/dsh-context')
+    const { parsePromotionReportV1 } = await import('@han_05/dsh-context')
     const baseline = corpusRecords('baseline', 'none', 100)
     const cold = corpusRecords('optimized', 'cold', 70, { uncached_source_tokens: 40 })
     const warm = corpusRecords('optimized', 'warm', 70, { uncached_source_tokens: 40 })

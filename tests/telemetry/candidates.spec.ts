@@ -4,7 +4,7 @@ import {
   type DatasetV1,
   type LessonV1,
   type RunAnnotationV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { createHash } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
 import { buildCandidates } from '../../src/telemetry/candidates.js'

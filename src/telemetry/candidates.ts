@@ -3,7 +3,7 @@ import {
   type CandidateV1,
   type DatasetV1,
   type LessonV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { createHash } from 'node:crypto'
 import { buildLessons } from './lessons.js'
 import { mineFailures } from './miner.js'

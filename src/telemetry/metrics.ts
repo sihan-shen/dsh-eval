@@ -1,4 +1,4 @@
-import type { DatasetV1, MetricV1, ObservationV1 } from '@ds-plugins/dsh-telemetry/contracts'
+import type { DatasetV1, MetricV1, ObservationV1 } from '@han_05/dsh-telemetry/contracts'
 import { getValidatedCompleteRunsV1 } from './dataset.js'
 
 const unavailable = (): MetricV1 => ({

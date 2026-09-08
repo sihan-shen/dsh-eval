@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import { expect, it } from 'vitest'
-import * as entry from '@ds-plugins/dsh-eval'
+import * as entry from '@han_05/dsh-eval'
 
 it('exposes the standalone evaluator entry and metadata', async () => {
   expect(entry).toHaveProperty('runBaseline')

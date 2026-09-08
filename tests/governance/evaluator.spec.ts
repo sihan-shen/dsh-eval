@@ -1,4 +1,4 @@
-import type { ObservationV1, RunAnnotationV1, RunSealV1 } from '@ds-plugins/dsh-telemetry/contracts'
+import type { ObservationV1, RunAnnotationV1, RunSealV1 } from '@han_05/dsh-telemetry/contracts'
 import { describe, expect, it } from 'vitest'
 import {
   TEMPLATE_OFFLINE_V1_CORPUS_MANIFEST,

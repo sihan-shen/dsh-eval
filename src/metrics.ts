@@ -1,5 +1,5 @@
-import type { EvaluationRecordV1, EvaluationTaskV1 } from '@ds-plugins/dsh-context'
-import { parseEvaluationTaskV1, sha256Utf8 } from '@ds-plugins/dsh-context'
+import type { EvaluationRecordV1, EvaluationTaskV1 } from '@han_05/dsh-context'
+import { parseEvaluationTaskV1, sha256Utf8 } from '@han_05/dsh-context'
 import { estimateSourceTokensV1, tokenizerMetadataV1 } from './tokenizer.js'
 import type { BaselineFileV1, RetrievalRunV1, SourceMeasurementV1 } from './types.js'
 

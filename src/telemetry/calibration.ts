@@ -3,7 +3,7 @@ import {
   type DatasetV1,
   type EvidenceRefV1,
   type RefV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { getValidatedCompleteRunsV1 } from './dataset.js'
 
 const MAX_COHORT_RUNS = 32

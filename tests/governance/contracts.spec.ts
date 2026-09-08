@@ -10,7 +10,7 @@ import type {
   ObservationV1,
   RunAnnotationV1,
   RunSealV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { sha256Canonical } from '../../src/governance/index.js'
 import type {
   ArmMetricObservationV1,
@@ -39,7 +39,7 @@ import type {
 const testDirectory = dirname(fileURLToPath(import.meta.url))
 const packageRoot = resolve(testDirectory, '../..')
 const allowedBuiltGovernanceExternalImports = new Set([
-  '@ds-plugins/dsh-telemetry/contracts',
+  '@han_05/dsh-telemetry/contracts',
   'node:crypto',
 ])
 
@@ -600,8 +600,8 @@ describe('governance contracts', () => {
 
   it('loads the built governance subpath and keeps it out of the main entrypoint', async () => {
     const [governance, main] = await Promise.all([
-      import('@ds-plugins/dsh-eval/governance'),
-      import('@ds-plugins/dsh-eval'),
+      import('@han_05/dsh-eval/governance'),
+      import('@han_05/dsh-eval'),
     ])
 
     expect(governance.sha256Canonical).toBeTypeOf('function')
@@ -713,7 +713,7 @@ describe('governance contracts', () => {
       'entry.js': "export * from './runtime.js'",
       'runtime.js': [
         "export { createHash } from 'node:crypto'",
-        "export type { ObservationV1 } from '@ds-plugins/dsh-telemetry/contracts'",
+        "export type { ObservationV1 } from '@han_05/dsh-telemetry/contracts'",
       ].join('\n'),
       'entry.d.ts': "export * from './types.js'",
       'types.d.ts': "export type { Forbidden } from '@forbidden/types'",
@@ -757,7 +757,7 @@ describe('governance contracts', () => {
     const imports = sources.flatMap(extractImportSpecifiers)
 
     expect(imports).toEqual(expect.arrayContaining([
-      '@ds-plugins/dsh-telemetry/contracts',
+      '@han_05/dsh-telemetry/contracts',
       'node:crypto',
       './admission.js',
       './canonical.js',
@@ -768,7 +768,7 @@ describe('governance contracts', () => {
       './validate.js',
     ]))
     expect(new Set(imports)).toEqual(new Set([
-      '@ds-plugins/dsh-telemetry/contracts',
+      '@han_05/dsh-telemetry/contracts',
       'node:crypto',
       './admission.js',
       './candidate-support.js',

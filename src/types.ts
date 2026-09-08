@@ -1,7 +1,7 @@
 import type {
   EvaluationTaskV1,
   SymbolMatchV1,
-} from '@ds-plugins/dsh-context'
+} from '@han_05/dsh-context'
 
 export type BaselineFileV1 = {
   readonly path: string

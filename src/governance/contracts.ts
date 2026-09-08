@@ -4,7 +4,7 @@ import type {
   ObservationV1,
   RunAnnotationV1,
   RunSealV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 
 export type GovernanceSurfaceV1 = 'template' | 'routing' | 'verification' | 'kernel'
 

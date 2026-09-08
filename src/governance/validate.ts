@@ -10,7 +10,7 @@ import {
   type PatternV1,
   type RunAnnotationV1,
   type RunSealV1,
-} from '@ds-plugins/dsh-telemetry/contracts'
+} from '@han_05/dsh-telemetry/contracts'
 import { canonicalGovernanceJson, sha256Canonical } from './canonical.js'
 import type {
   ArmMetricObservationV1,
