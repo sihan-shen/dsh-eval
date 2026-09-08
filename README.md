@@ -9,7 +9,7 @@ This package originates in the [DS-Plugins monorepo](https://github.com/sihan-sh
 - **Library:** public source repository; npm publication is prepared but is not implied by a GitHub release.
 - **CLI:** `dsh-telemetry` is an offline, local-files-only CLI included by this package.
 - **Fixtures:** the checked-in `fixtures/v0.2a` corpus is packaged for deterministic baseline and optimized evaluation tests.
-- **DSH/Cordis:** this package does not mount a Cordis plugin itself. Its optimized evaluator consumes `@han_05/dsh-code-intelligence`, whose compatibility target is DSH `0.1.1-rc.2` and Cordis `4.0.1`.
+- **DSH/Cordis:** this package does not mount a Cordis plugin itself. Its optimized evaluator consumes `@han_05/dsh-code-intelligence`, whose compatibility target is DSH `0.1.2-rc.1` and Cordis `4.0.2`.
 
 ## Install
 
