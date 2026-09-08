@@ -4,6 +4,8 @@ Offline evaluation, governance-evidence validation, and bounded local telemetry 
 
 This package originates in the [DS-Plugins monorepo](https://github.com/sihan-shen/DS-Plugins). It is intentionally usable as a standalone npm package and has no network, provider, or model-runtime requirement.
 
+当前开发重点在dsh-code-intelligence项目，其他项目迭代暂停。
+
 ## Availability
 
 - **Library:** public source repository; npm publication is prepared but is not implied by a GitHub release.
